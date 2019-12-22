@@ -124,6 +124,8 @@ const styles = StyleSheet.create({
  
 #### Mandando a mensagem apartir de uma requisição POST
 ##### Ex.: Abra o postman e teste
+
+*headers*
 ```
 
 headers: { 
@@ -134,7 +136,7 @@ headers: {
   }
   
 ```
-
+*body*
 ```
 {                 
   "to": "ExponentPushToken[FaRGySNWuAhsKmE4UR3asD",                        
