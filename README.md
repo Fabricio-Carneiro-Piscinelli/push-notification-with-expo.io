@@ -29,3 +29,5 @@ const styles = StyleSheet.create({
 });
 
 ```
+#### Gerei meu código inicial padrão do expo, bom basicamente não vamos instalar nada, pois o expo ele já vem com alguns pacotes instalados, como é o caso das notifications. Bom sendo assim, vamos construir nossas funções de maneira simples e que possamos a partir disso criar nossas futuras aplicações. Vou montando função por função e no final junto tudo ok?
+
