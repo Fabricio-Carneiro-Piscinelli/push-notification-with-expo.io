@@ -125,6 +125,7 @@ const styles = StyleSheet.create({
 #### Mandando a mensagem apartir de uma requisição POST
 ##### Ex.: Abra o postman e teste
 ```
+
 headers: { 
     'Accept': 'application/json',
     'Content-Type' : 'application/json',
@@ -133,6 +134,8 @@ headers: {
   }
   
 ```
+
+```
 {                 
   "to": "ExponentPushToken[FaRGySNWuAhsKmE4UR3asD",                        
   "title": "Fabricio Piscinelli",                  
@@ -140,7 +143,6 @@ headers: {
   "sound": "default",
   "vibrate": true
 }
-```
 
 ```
 #### Bom passando esses paramentros no postman o resultado e o mesmo. Ao fazer a requisição a sua notification push será enviada para o dono do tokenPush. 
