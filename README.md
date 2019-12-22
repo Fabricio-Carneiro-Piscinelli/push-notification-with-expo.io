@@ -64,6 +64,7 @@ componentDidMount = async () => {
 ```
 
 #### Enfim para facilitar, vou deixar aqui meu código completo do App.js 
+##### app.js
 ```
 import React,{ Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
@@ -113,3 +114,7 @@ const styles = StyleSheet.create({
 
 
 ```
+#### Beleza, agora vamos salvar o cod e rodar, se tudo deu muito certo, nosso `console.log(token);` vai mostrar o token gerado a partir do seu celular pessoal. Se você ver algo como isso ExponentPushToken[FaRGySNWuAhsKmE4UR3asD] siginifca que deu certo, ai para testar se realmente seu celular está recebendo notificações entre neste site da própria expo. 
+<a href="https://expo.io/notifications">https://expo.io/notifications</a>
+#### assim que você entrar no site faça o seguinte: 
+
