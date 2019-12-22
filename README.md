@@ -145,4 +145,4 @@ headers: {
 ```
 #### Bom passando esses paramentros no postman o resultado e o mesmo. Ao fazer a requisição a sua notification push será enviada para o dono do tokenPush. 
 #### É ISSO AE GALERA!! espero ter ajudado mesmo
-<img src="https://gifimage.net/wp-content/uploads/2017/11/isso-%C3%83%C2%A9-tudo-pessoal-gif-3.gif" />
+<center><img src="https://gifimage.net/wp-content/uploads/2017/11/isso-%C3%83%C2%A9-tudo-pessoal-gif-3.gif" /></center>
