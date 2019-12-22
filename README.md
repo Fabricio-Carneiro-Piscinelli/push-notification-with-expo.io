@@ -121,4 +121,28 @@ const styles = StyleSheet.create({
   ##### `*Message title*` <= escreva um título,
   ##### `*Message body*` <= e por fim sua mensagem.
  #### Se você faz isso, vá no último botão e de um *Send a Notification* OK!!!!!! desligue a tela do seu aparelho e de send, em alguns milisegundos a notificação estará na seu celular.  
+ 
+#### Mandando a mensagem apartir de uma requisição POST
+##### Ex.: Abra o postman e teste
+```
+headers: { 
+    'Accept': 'application/json',
+    'Content-Type' : 'application/json',
+    'accept-encoding' : 'gzip, deflate',
+    'host': 'exp.host'
+  }
+  
+```
+{                 
+  "to": "ExponentPushToken[FaRGySNWuAhsKmE4UR3asD",                        
+  "title": "Fabricio Piscinelli",                  
+  "body": "teste de daods!",
+  "sound": "default",
+  "vibrate": true
+}
+```
 
+```
+#### Bom passando esses paramentros no postman o resultado e o mesmo. Ao fazer a requisição a sua notification push será enviada para o dono do tokenPush. 
+#### É ISSO AE GALERA!! espero ter ajudado mesmo
+<img src="https://gifimage.net/wp-content/uploads/2017/11/isso-%C3%83%C2%A9-tudo-pessoal-gif-3.gif" />
