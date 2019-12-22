@@ -31,3 +31,34 @@ const styles = StyleSheet.create({
 ```
 #### Gerei meu código inicial padrão do expo, bom basicamente não vamos instalar nada, pois o expo ele já vem com alguns pacotes instalados, como é o caso das notifications. Bom sendo assim, vamos construir nossas funções de maneira simples e que possamos a partir disso criar nossas futuras aplicações. Vou montando função por função e no final junto tudo ok?
 
+#### Então vamos importar nossas dependência para o funcionamento correto do expo-notifications
+  ##### 1 - `import * as Permissions from 'expo-permissions';`
+  ##### 2 - `import { Notifications } from 'expo';`
+
+#### Ok! depois de importado isso, vamos chamar essas funções para que as mesmas possam começar a funcionar corretamente.
+#### Dentro da nossa class vamos inserir nosso codigo
+```
+componentDidMount = async () => {
+
+    //Funcao responsavel para montar o status de permissao para o envio de notificações 
+    const { status: existingStatus } = await Permissions.getAsync(
+      Permissions.NOTIFICATIONS
+    );
+    let finalStatus = existingStatus;
+    if (existingStatus !== 'granted') {
+      const { status } = await Permissions.askAsync(Permissions.NOTIFICATIONS);
+      finalStatus = status;
+    }
+    
+    //caso o finalStatus nao estiver liberado ou seja com granted, nao podera gerar o token de notificacaoes 
+    if (finalStatus !== 'granted') {
+      return;
+    }
+    
+    //se todas as permissoes estiverem ok, sera gerado um token, que tem como objetivo a entrega das notificacoes 
+    //unicamente para o dispositivo responsavel por pertencer a este token
+    let token = await Notifications.getExpoPushTokenAsync();
+    console.log( token );
+  }
+  
+```
